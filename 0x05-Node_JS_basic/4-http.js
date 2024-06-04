@@ -9,4 +9,6 @@ const server = createServer((request, response) => {
   response.end('Hello Holberton School!');
 });
 
-server.listen(port, hostname);
+const app = server.listen(port, hostname);
+
+module.exports = app;
