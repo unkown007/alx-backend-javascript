@@ -10,3 +10,5 @@ app.get('/', (request, response) => {
 app.listen(PORT, () => {
   process.stdout.write(`The server is listening to http://localhost:${PORT}\n`);
 });
+
+module.exports = app;
