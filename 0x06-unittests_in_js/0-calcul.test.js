@@ -1,20 +1,20 @@
 const assert = require('assert');
-const calculateNumber = require('./0-calcul.js');
+const calculateNumber = require('./0-calcul');
 
-describe('Sum numbers', () => {
-  it("Sum 1, 3", () => {
-    assert(calculateNumber(1, 3) === 4);
+describe('calculateNumber', () => {
+  it('sum 1, 3', () => {
+    assert.strictEqual(calculateNumber(1, 3), 4);
   });
 
-  it("Sum 1, 3.7", () => {
-    assert(calculateNumber(1, 3.7) === 5);
+  it('sum 1, 3.7', () => {
+    assert.strictEqual(calculateNumber(1, 3.7), 5);
   });
 
-  it("Sum 1.2, 3.7", () => {
-    assert(calculateNumber(1.2, 3.7) === 5);
+  it('sum 1.2, 3.7', () => {
+    assert.strictEqual(calculateNumber(1.2, 3.7), 5);
   });
 
-  it("Sum 1.5, 3.7", () => {
-    assert(calculateNumber(1.5, 3.7) === 6);
+  it('sum 1.5, 3.7', () => {
+    assert.strictEqual(calculateNumber(1.5, 3.7), 6);
   });
 });
